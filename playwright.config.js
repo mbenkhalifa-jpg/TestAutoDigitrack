@@ -15,6 +15,8 @@ module.exports = defineConfig({
   use: {
     browserName: 'chromium',
     headless: false, // Affiche le navigateur
+    locale : 'fr-FR',
+    //browserName: 'firefox',
     screenshot: 'only-on-failure',
 },
   /* Run tests in files in parallel */

@@ -10,7 +10,7 @@ test('test', async ({ page }) => {
   const Menu = new MenuPage(page)
   const Gestion = new gestionPassagesPage(page)
   Login.gotoLoginPage();
-  Login.login('ragheb.postman','poxerbarubary12')
+  Login.login('ragheb.postman','poxerbarubary12');
   await Menu.gotoGestPage();
   await Gestion.clickCell();
   });

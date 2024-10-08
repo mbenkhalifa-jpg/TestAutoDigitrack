@@ -1,4 +1,4 @@
-import {test} from '@playwright/test' ;
+import {test} from '@playwright/test';
 import { LoginPage } from '../pages/login'
 import { MenuPage } from '../pages/menu';
 import { CreationTransporteurPage } from '../pages/transporteur';
@@ -13,6 +13,7 @@ test('test', async ({ page }) => {
   
   
   Login.gotoLoginPage();
+  await page.waitForTimeout(20000);
   Login.login('marwa.benkhalifa-ext@altaroad.com','Marmarou1234*')
   await page.waitForTimeout(10000);
   Menu.gotoTransPage();

@@ -25,8 +25,8 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-    locale : 'fr-FR',
-    //browserName: 'firefox',
+    //locale : 'fr-FR',
+ // browserName: 'firefox',
     headless: false, // Affiche le navigateur
     //screenshot: 'only-on-failure',
 
@@ -36,22 +36,23 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-   
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-
+   
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
+    
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
 
+    
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',

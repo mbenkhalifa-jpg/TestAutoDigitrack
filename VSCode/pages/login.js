@@ -3,9 +3,9 @@ exports.LoginPage =  class LoginPage {
     constructor (page)
     {
         this.page = page
-        this.username_textbox = page.getByLabel('Adresse e-mail ou nom d\'')
-        this.password_textbox = page.getByLabel('Mot de passe')
-        this.login_button = page.getByRole('button', { name: 'Se connecter' })
+        this.username_textbox = page.getByLabel('Adresse e-mail ou nom d\'');
+        this.password_textbox = page.getByLabel('Mot de passe');
+        this.login_button = page.getByRole('button', { name: 'Se connecter' });
 
     }
     

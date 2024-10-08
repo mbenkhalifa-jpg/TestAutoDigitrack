@@ -15,7 +15,8 @@ test('test', async ({ page }) => {
   const creerPassage = new creerMatiereModalPage(page)
   
   Login.gotoLoginPage();
-  Login.login('marwa.benkhalifa-ext@altaroad.com','Marmarou1234*')
+  await page.waitForTimeout(10000);
+  Login.login('marwa.benkhalifa-ext@altaroad.com','Marmarou1234*');
   await page.waitForTimeout(10000);
   Menu.gotoCreationPage();
   await page.waitForTimeout(10000);
